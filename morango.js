@@ -13,11 +13,11 @@ console.log("=> Parsing program options...");
 program
     .usage('[options]')
     .option('-k, --key [key]', 'The attribute at the mongo collection to be used as the _key at the arango collection. '
-                              +'If none is given, the Arango will give its default value.')
+            +'If none is given, the Arango will give its default value.')
     .option('-m, --mongo_collection <collection>', 'The name of the mongo collection that will be copied.')
     .option('-a, --arango_collection <collection>', 'The name of the arango collection that will be filled.')
     .option('-l, --log_frequency <n>', 'Frequency in which a status update will be displayed on the console, '
-                              + 'based on the number of documents read from mongo. Default is 1.', parseInt)    
+            + 'based on the number of documents read from mongo. Default is 1.', parseInt)    
     .parse(process.argv);
 
 // defaut options
