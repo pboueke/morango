@@ -20,3 +20,17 @@ ARANGO_HOST=
 ARANGO_PORT=
 
 ```
+
+## Options
+
+```-k```, ```--key``` ```[attribute]```
+* **Optional**
+* The mongo document attribute to be used as the ```_key``` attribute at the arango collection. The default ```_key``` attribute from arango is used  if none is given.
+
+```-m```, ```-mongo_collection``` ```<collection>```
+* **Required**
+* The name of the mongo collection that will be copied.
+
+```-a```, ```-arango_collection``` ```<collection>```
+* **Required**
+* The name of the arango collection that will be filled.
