@@ -12,7 +12,7 @@ console.log("=> Parsing program options...");
 
 program
     .usage('[options]')
-    .option('-k, --key [key]', 'The attribute at the mongo collection to be used as the _key at the arango collection. '
+    .option('-k, --key <key>', 'The attribute at the mongo collection to be used as the _key at the arango collection. '
             +'If none is given, the Arango will give its default value.')
     .option('-m, --mongo_collection <collection>', 'The name of the mongo collection that will be copied.')
     .option('-a, --arango_collection <collection>', 'The name of the arango collection that will be filled.')
@@ -73,14 +73,14 @@ var moveAllToArango = function (m_db, callback) {
         async function processItem(err, item) {
 
             if (item === null) {
-                console.log(`All Done. Documents [Saved/Found/Read][${sc}/${fc}/:${rc}]`);
+                console.log(`All Done. Documents [Saved/Found/Read][${sc}/${fc}/${rc}]`);
                 return;
             }
             
             try {
 
                 rc += 1;          
-                if (rc%log_frequency === 0) console.log(`=> Documents [Saved/Found/Read][${sc}/${fc}/:${rc}]`);            
+                if (rc%log_frequency === 0) console.log(`=> Documents [Saved/Found/Read][${sc}/${fc}/${rc}]`);            
                 await a_col.document(item.DocNumber);
                 fc += 1;
             
