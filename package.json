@@ -1,0 +1,25 @@
+{
+  "name": "morango",
+  "version": "1.0.0",
+  "description": "simply copies entire collections from a MongoDB instance to a ArangoDB instance",
+  "main": "morango.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pboueke/morango.git"
+  },
+  "author": "Pedro Boueke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pboueke/morango/issues"
+  },
+  "homepage": "https://github.com/pboueke/morango#readme",
+  "devDependencies": {
+    "arangojs": "^5.7.1",
+    "commander": "^2.11.0",
+    "dotenv": "^4.0.0",
+    "mongodb": "^2.2.33"
+  }
+}
