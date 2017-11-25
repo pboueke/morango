@@ -1,6 +1,6 @@
 # morango
 
-Simply copies synchronously a entire simple documents collection from a MongoDB instance to a ArangoDB instace. You are responsible for creating the ArangoDB collections and their indexes. This process only copies the documents and allows for a specific field to be used as the ```_key``` attribute.
+Simply copies synchronously an entire simple documents collection from a MongoDB instance to an ArangoDB instace. You are responsible for creating the ArangoDB collections and their indexes. This process only copies the documents and allows for a specific field to be used as the ```_key``` attribute.
 
 ## Setup
 
